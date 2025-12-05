@@ -1,0 +1,34 @@
+.home-container {
+  padding: 24px;
+}
+
+.home-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.work-card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.work-card .ant-card-body {
+  padding: 12px;
+}
+
+.work-cover {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.work-cover:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}

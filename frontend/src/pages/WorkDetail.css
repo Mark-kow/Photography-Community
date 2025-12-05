@@ -1,0 +1,69 @@
+.work-detail-container {
+  padding: 24px;
+}
+
+.work-detail-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.work-images {
+  margin-bottom: 24px;
+}
+
+.work-images img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.work-info {
+  padding: 8px 0;
+}
+
+.work-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.work-author {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-meta {
+  display: flex;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.work-actions {
+  margin: 24px 0;
+}
+
+.work-comments {
+  margin-top: 24px;
+}
+
+.comment-input {
+  margin: 16px 0;
+}
+
+/* AI点评区域样式 */
+.ai-analysis-section {
+  margin: 24px 0;
+}
+
+.ai-analysis-card {
+  border-left: 3px solid #1890ff;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.1);
+}
+
+.ai-analysis-card .ant-card-body {
+  padding: 20px;
+}
+
+.ai-analysis-section .ant-alert {
+  border-radius: 8px;
+}

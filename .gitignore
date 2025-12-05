@@ -1,0 +1,84 @@
+# 依赖文件
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# 环境配置文件（包含敏感信息）
+.env
+.env.local
+.env.*.local
+*.env
+
+# 日志文件
+logs/
+*.log
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 上传文件
+uploads/
+*.upload
+
+# 构建输出
+dist/
+build/
+.cache/
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# 开发文档（内部使用，不发布）
+ADMIN_ACTIVITY_CHALLENGE_GUIDE.md
+ADMIN_COURSE_TIPS_GUIDE.md
+ADMIN_GUIDE.md
+AI_API_QUICK_REFERENCE.md
+AI_ENHANCEMENTS.md
+AI_ENHANCEMENTS_SUMMARY.md
+AI_EQUIPMENT_ADVISOR_ENHANCED.md
+AI_EQUIPMENT_ADVISOR_ENHANCED_TEST.md
+AI_FEATURES_GUIDE.md
+DEVELOPMENT_STATUS.md
+DEVELOPMENT_SUMMARY.md
+EQUIPMENT_ADMIN_IMPLEMENTATION.md
+LOCATION_AI_FEATURE.md
+MODULE_COMPLETION_REPORT.md
+PROJECT_SUMMARY.md
+ROLE_PERMISSION_GUIDE.md
+SMART_TAG_CHANGELOG.md
+SMART_TAG_COMPLETION_SUMMARY.md
+SMART_TAG_GENERATION_REPORT.md
+SMART_TAG_QUICK_START.md
+SMART_TAG_TROUBLESHOOTING.md
+SMART_TAG_UI_DEMO.md
+STAGE2_COMPLETION.md
+
+# 原始需求文档（内部使用）
+photograph.docx
+photograph.txt
+photography.md
+photography_requirements_v2.md
+
+# Qoder 配置目录
+.qoder/
+
+# GitHub 发布检查清单（临时文档）
+GITHUB_PUBLISH_CHECKLIST.md

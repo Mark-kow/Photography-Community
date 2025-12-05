@@ -1,0 +1,247 @@
+.challenge-detail-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.challenge-detail-header {
+  margin-bottom: 20px;
+}
+
+.challenge-detail-card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.challenge-cover-large {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.challenge-cover-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), transparent);
+}
+
+.challenge-status-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.challenge-header-section {
+  margin-bottom: 20px;
+}
+
+.challenge-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.challenge-meta-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #666;
+}
+
+.meta-item svg {
+  font-size: 18px;
+  color: #1890ff;
+}
+
+.challenge-info-section {
+  padding: 20px 0;
+}
+
+.info-card {
+  margin-bottom: 30px;
+}
+
+.info-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.info-card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #666;
+  margin: 0;
+}
+
+.prizes-card {
+  background: #fff7e6;
+  border: 1px solid #ffd591;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.prizes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.works-section {
+  padding: 20px 0;
+}
+
+.work-cover {
+  height: 200px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.work-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-stats {
+  display: flex;
+  gap: 15px;
+  color: #666;
+}
+
+.rankings-section {
+  padding: 20px 0;
+}
+
+.ranking-item {
+  padding: 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.ranking-item:hover {
+  background: #f5f5f5;
+}
+
+.ranking-rank {
+  margin-right: 15px;
+}
+
+.rank-badge {
+  display: inline-block;
+  min-width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50%;
+  background: #f0f0f0;
+  color: #666;
+}
+
+.rank-badge.top-three {
+  font-size: 24px;
+  background: transparent;
+}
+
+.ranking-user {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ranking-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: right;
+  color: #666;
+  font-size: 14px;
+}
+
+.challenge-actions {
+  margin-top: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .challenge-detail-container {
+    padding: 15px;
+  }
+
+  .challenge-cover-large {
+    height: 200px;
+  }
+
+  .challenge-title {
+    font-size: 24px;
+  }
+
+  .challenge-meta-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .work-cover {
+    height: 150px;
+  }
+
+  .ranking-rank {
+    margin-right: 10px;
+  }
+
+  .rank-badge {
+    min-width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+  }
+
+  .rank-badge.top-three {
+    font-size: 20px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .action-buttons button {
+    width: 100%;
+  }
+}

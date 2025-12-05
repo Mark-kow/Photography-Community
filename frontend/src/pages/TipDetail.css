@@ -1,0 +1,163 @@
+.tip-detail-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tip-detail-header {
+  margin-bottom: 20px;
+}
+
+.tip-detail-card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tip-header {
+  margin-bottom: 30px;
+}
+
+.tip-title-section h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.tip-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tip-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.tip-stats {
+  display: flex;
+  gap: 20px;
+  color: #999;
+  font-size: 14px;
+}
+
+.tip-stats span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tip-cover {
+  width: 100%;
+  margin: 30px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tip-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tip-content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin: 30px 0;
+  min-height: 200px;
+}
+
+.tip-content h2 {
+  font-size: 24px;
+  margin: 30px 0 15px 0;
+  color: #333;
+}
+
+.tip-content h3 {
+  font-size: 20px;
+  margin: 25px 0 12px 0;
+  color: #555;
+}
+
+.tip-content p {
+  margin: 15px 0;
+}
+
+.tip-content ul, .tip-content ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+.tip-content li {
+  margin: 8px 0;
+}
+
+.tip-content code {
+  background: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+.tip-content pre {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 15px 0;
+}
+
+.tip-actions {
+  display: flex;
+  gap: 15px;
+  padding-top: 30px;
+  border-top: 1px solid #f0f0f0;
+  justify-content: center;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .tip-detail-container {
+    padding: 15px;
+  }
+
+  .tip-title-section h1 {
+    font-size: 24px;
+  }
+
+  .tip-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .tip-actions {
+    flex-direction: column;
+  }
+
+  .tip-actions button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,150 @@
+.courses-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.courses-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.courses-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.courses-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.courses-filters {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.courses-grid, .tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.course-card, .tip-card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.course-cover, .tip-card img {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.course-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.course-card:hover .course-cover img {
+  transform: scale(1.1);
+}
+
+.course-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.course-type-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.course-info {
+  font-size: 14px;
+}
+
+.course-description {
+  color: #666;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 40px;
+}
+
+.course-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.meta-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #999;
+  font-size: 13px;
+}
+
+.rating-text {
+  color: #999;
+  font-size: 13px;
+}
+
+.instructor {
+  color: #666;
+  font-size: 13px;
+}
+
+.tip-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tip-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tip-tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.tip-stats {
+  display: flex;
+  gap: 15px;
+  color: #999;
+  font-size: 13px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}

@@ -1,0 +1,151 @@
+.equipment-advisor-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.equipment-advisor-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.equipment-advisor-header h1 {
+  font-size: 32px;
+  color: #1890ff;
+  margin-bottom: 10px;
+}
+
+.equipment-advisor-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.equipment-advisor-content {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 20px;
+}
+
+.form-section {
+  position: sticky;
+  top: 20px;
+  align-self: start;
+}
+
+.result-section {
+  min-height: 400px;
+}
+
+.advice-card .requirement-summary {
+  background: #f5f7fa;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.advice-card h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.requirement-text {
+  white-space: pre-wrap;
+  line-height: 1.8;
+  color: #666;
+  font-size: 14px;
+}
+
+.advice-content {
+  margin-top: 20px;
+}
+
+.advice-text {
+  white-space: pre-wrap;
+  line-height: 1.8;
+  color: #333;
+  font-size: 14px;
+  padding: 16px;
+  background: white;
+  border-left: 3px solid #1890ff;
+}
+
+.advice-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* 推荐器材卡片样式 */
+.equipment-cards h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.equipment-item-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.equipment-item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.equipment-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.equipment-item-header h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  flex: 1;
+}
+
+.equipment-item-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4d4f;
+  margin-bottom: 12px;
+}
+
+.equipment-item-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.equipment-item-desc {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 992px) {
+  .equipment-advisor-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-section {
+    position: static;
+  }
+}

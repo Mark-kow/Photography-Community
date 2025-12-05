@@ -1,0 +1,28 @@
+.create-activity-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.create-activity-header {
+  margin-bottom: 20px;
+}
+
+.create-activity-card {
+  border-radius: 8px;
+}
+
+.create-activity-card .ant-card-head-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .create-activity-container {
+    padding: 15px;
+  }
+
+  .create-activity-card .ant-card-head-title {
+    font-size: 20px;
+  }
+}

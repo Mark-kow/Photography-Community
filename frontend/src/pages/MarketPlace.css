@@ -1,0 +1,168 @@
+.marketplace-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.marketplace-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.marketplace-header h1 {
+  font-size: 32px;
+  margin: 0 0 5px 0;
+}
+
+.marketplace-header p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.marketplace-filters {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.market-card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.market-cover {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.market-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.market-card:hover .market-cover img {
+  transform: scale(1.1);
+}
+
+.market-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.market-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.title-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.market-info {
+  font-size: 14px;
+}
+
+.market-description {
+  color: #666;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.market-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.meta-item {
+  color: #666;
+  font-size: 13px;
+}
+
+.market-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.market-price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  color: #ff4d4f;
+}
+
+.price-amount {
+  font-size: 18px;
+}
+
+.original-price {
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+.market-stats {
+  color: #999;
+  font-size: 13px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .marketplace-container {
+    padding: 15px;
+  }
+
+  .marketplace-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .marketplace-header h1 {
+    font-size: 24px;
+  }
+
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
+}

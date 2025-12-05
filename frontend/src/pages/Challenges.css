@@ -1,0 +1,165 @@
+.challenges-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.challenges-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.challenges-header h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.challenges-header p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.challenges-filters {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.challenge-card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.challenge-cover {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.challenge-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.challenge-card:hover .challenge-cover img {
+  transform: scale(1.1);
+}
+
+.challenge-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.challenge-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.challenge-info {
+  font-size: 14px;
+}
+
+.challenge-description {
+  color: #666;
+  margin-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.challenge-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+}
+
+.meta-item .anticon {
+  color: #1890ff;
+}
+
+.challenge-progress {
+  margin-bottom: 15px;
+}
+
+.challenge-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  font-size: 13px;
+}
+
+.stat-item .anticon {
+  color: #1890ff;
+}
+
+.challenge-prizes {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .challenges-container {
+    padding: 15px;
+  }
+
+  .challenges-header h1 {
+    font-size: 24px;
+  }
+
+  .challenge-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,114 @@
+.my-equipments-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.my-equipments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.my-equipments-header h1 {
+  font-size: 32px;
+  margin: 0 0 5px 0;
+}
+
+.my-equipments-header p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.my-equipments-tabs {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.my-equipment-card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.my-equipment-cover {
+  height: 200px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.my-equipment-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.my-equipment-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.my-equipment-info {
+  font-size: 14px;
+}
+
+.info-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.info-row .label {
+  font-weight: 500;
+  color: #999;
+}
+
+.info-row.notes {
+  flex-direction: column;
+  gap: 4px;
+}
+
+.equipment-actions {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .my-equipments-container {
+    padding: 15px;
+  }
+
+  .my-equipments-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .my-equipments-header h1 {
+    font-size: 24px;
+  }
+
+  .equipment-grid {
+    grid-template-columns: 1fr;
+  }
+}

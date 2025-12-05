@@ -1,0 +1,184 @@
+.smart-tag-selector {
+  width: 100%;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+}
+
+/* 已选标签区域 */
+.selected-tags {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed #d9d9d9;
+  min-height: 40px;
+}
+
+.selected-tag {
+  font-size: 14px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  background: #1890ff;
+  color: white;
+  border: none;
+  cursor: default;
+  transition: all 0.3s;
+}
+
+.selected-tag:hover {
+  background: #40a9ff;
+}
+
+.add-tag-btn {
+  font-size: 14px;
+  padding: 4px 12px;
+  border: 1px dashed #1890ff;
+  background: white;
+  color: #1890ff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-tag-btn:hover {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+/* 搜索下拉 */
+.tag-search-dropdown {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  z-index: 1000;
+  min-width: 200px;
+  background: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.tag-search-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.tag-search-item:hover {
+  background: #f5f5f5;
+}
+
+.tag-search-item .tag-count {
+  font-size: 12px;
+  color: #999;
+  margin-left: 8px;
+}
+
+/* AI推荐区域 */
+.ai-section {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed #d9d9d9;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.section-header span {
+  flex: 1;
+}
+
+.suggestion-tags {
+  margin-top: 12px;
+}
+
+.suggestion-tag {
+  font-size: 14px;
+  padding: 4px 12px;
+  border: 1px dashed #52c41a;
+  background: #f6ffed;
+  color: #52c41a;
+  transition: all 0.3s;
+}
+
+.suggestion-tag:hover {
+  background: #d9f7be;
+  border-color: #73d13d;
+  color: #389e0d;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(82, 196, 26, 0.2);
+}
+
+.empty-hint {
+  padding: 12px;
+  background: white;
+  border: 1px dashed #d9d9d9;
+  border-radius: 4px;
+  color: #999;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* 热门标签区域 */
+.popular-section {
+  margin-bottom: 12px;
+}
+
+.popular-tags {
+  margin-top: 12px;
+}
+
+.popular-tag {
+  font-size: 13px;
+  padding: 3px 10px;
+  border: 1px solid #ffa940;
+  background: #fff7e6;
+  color: #fa8c16;
+  transition: all 0.3s;
+}
+
+.popular-tag:hover {
+  background: #ffd591;
+  border-color: #ff7a45;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(250, 140, 22, 0.2);
+}
+
+.popular-tag.selected {
+  background: #e8e8e8;
+  color: #999;
+  border-color: #d9d9d9;
+}
+
+/* 提示文字 */
+.tag-hint {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .smart-tag-selector {
+    padding: 12px;
+  }
+
+  .selected-tag,
+  .add-tag-btn,
+  .suggestion-tag,
+  .popular-tag {
+    font-size: 13px;
+    padding: 3px 10px;
+  }
+}

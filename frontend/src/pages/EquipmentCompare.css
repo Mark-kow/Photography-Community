@@ -1,0 +1,103 @@
+.equipment-compare-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.compare-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.compare-header h1 {
+  font-size: 32px;
+  color: #1890ff;
+  margin-bottom: 10px;
+}
+
+.compare-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.compare-controls {
+  margin-bottom: 20px;
+}
+
+.control-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.control-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-item label {
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+}
+
+.selected-count {
+  padding: 12px;
+  background: #f0f7ff;
+  border-left: 3px solid #1890ff;
+  color: #1890ff;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.compare-table-card {
+  overflow-x: auto;
+}
+
+.compare-table-card .ant-table {
+  min-width: 800px;
+}
+
+.compare-table-card .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: bold;
+  text-align: center;
+}
+
+.compare-table-card .ant-table-tbody > tr > td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.compare-table-card .ant-table-tbody > tr > td:first-child {
+  text-align: left;
+  background: #fafafa;
+  font-weight: 500;
+}
+
+.compare-table-card .ant-table-tbody > tr:hover > td {
+  background: #f5f7fa;
+}
+
+@media (max-width: 768px) {
+  .control-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .control-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .control-item label {
+    margin-bottom: 8px;
+  }
+
+  .control-item .ant-select {
+    width: 100% !important;
+  }
+}
